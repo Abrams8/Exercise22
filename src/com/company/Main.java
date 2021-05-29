@@ -1,4 +1,4 @@
-package com.company;       
+package com.company;
 
 public class Main {
 
@@ -7,7 +7,8 @@ public class Main {
         int index = 0;
         for (; index < array.length; index++) {
             System.out.print(array[index] + " ");
-        } System.out.println("");
+        }
+        System.out.println("");
 
         transformMassive(array);
 
