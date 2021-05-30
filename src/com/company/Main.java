@@ -4,20 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
         int array[] = {7, 8, 6, 4, 3, 2, 17, 12, 9, 21};
-        int index = 0;
-        for (; index < array.length; index++) {
-            System.out.print(array[index] + " ");
-        }
-        System.out.println("");
+        printMassive(array);
 
         transformMassive(array);
 
-        for (index = 0; index < array.length; index++) {
-            System.out.print(array[index] + " ");
+        System.out.println("");
 
-        }
+        printMassive(array);
     }
-
     public static void transformMassive(int array[]) {
         int rightIndex = array.length - 1;
         int leftIndex = 0;
@@ -28,6 +22,11 @@ public class Main {
             newRight = array[rightIndex];
             array[leftIndex] = newRight;
             array[rightIndex] = newLeft;
+        }
+    }
+    public static void printMassive(int array[]) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
         }
     }
 }
